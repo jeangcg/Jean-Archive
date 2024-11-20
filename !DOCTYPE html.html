@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Number</title>
+</head>
+<body>
+
+  <div id="randomNumber" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+    Order number : 
+  </div>
+
+  <button onclick="generateRandomNumber()">Click here</button>
+
+  <script>
+    function generateRandomNumber() {
+      const randomNum = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+      document.getElementById('randomNumber').textContent = "Order number: " + randomNum;
+    }
+  </script>
+
+</body>
+</html>
